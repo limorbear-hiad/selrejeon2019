@@ -8,7 +8,7 @@ const fs = require('fs');
 
 const app = new Koa();
 const router = new Router();
-const api = require('api');
+const api = require('./api');
 
 const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
