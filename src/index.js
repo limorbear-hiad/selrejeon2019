@@ -13,7 +13,7 @@ const api = require('./api');
 const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
 
-const { jwtMiddleware } = require('/lib/token');
+const { jwtMiddleware } = require('./lib/token');
 
 const indexHtml = fs.readFileSync(path.resolve(__dirname, '../client/index.html'), { encoding: 'utf8' });
 
