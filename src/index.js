@@ -33,7 +33,7 @@ const port = process.env.PORT || 4000; // If a value of PORT is null, use 4000
 
 app.use(bodyParser()); // 라우터 use 보다 위에 있어야 함
 app.use(jwtMiddleware); // 역시 라우터 use 위에
-router.use('api', api.routes());
+router.use('./api', api.routes());
 
 app.use(router.routes()).use(router.allowedMethods());
 
