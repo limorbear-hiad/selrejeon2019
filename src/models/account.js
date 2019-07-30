@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const crypto = require('crypto');
-const { generateToken } = require('lib/token');
+const { generateToken } = require('../lib/token');
 
 function hash(password) {
     return crypto.createHmac('sha256', process.env.SECRET_KEY).update(password).digest('hex');
