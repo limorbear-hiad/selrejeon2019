@@ -1,4 +1,4 @@
-const Post = require('../../models/posts');
+const Post = require('/models/posts');
 
 exports.list = async (ctx) => { // 추천평 리스트 조회
     const { page } = ctx.params; // 몇번째 페이지인지 받아온다.
